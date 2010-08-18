@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.camangi.netconnect" android:versionCode="1"
+	android:versionName="1.0"
+        >
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:debuggable="true">
+		<activity android:name=".Main" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+	<activity android:name=".wifi.WifiSettings" android:label="@string/wifi_settings"
+          android:clearTaskOnLaunch="true">
+            <intent-filter>
+                <action android:name="com.camangi.netconnect.ListAP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+	</activity>
+
+
+        <activity android:name=".wifi.AdvancedSettings" android:label="@string/wifi_ip_settings_titlebar"
+                >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.settings.WIFI_IP_SETTINGS" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+	</application>
+
+
+
+
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+	<uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+
+
+        <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+        <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+        <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+
+
+</manifest> 
