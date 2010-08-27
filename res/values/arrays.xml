@@ -312,9 +312,9 @@
 
 
 	<string-array name="ConnectType">
-		<item>There is no NetWork!</item>
-		<item>You use 3G to connect to netWork</item>
-		<item>You use WiFi to connect to netWork</item>
+		<item>No access to internet</item>
+		<item>You are currently using 3G network</item>
+		<item>You are currently using WiFi networkk</item>
 	</string-array>
 
 

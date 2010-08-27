@@ -38,7 +38,7 @@ public class Main extends Activity {
 
                 
 		// Step(1) check 3g
-		if (about3g.Is3GEnabled()) {
+		if (about3g.Is3GEnabled(Main.this)) {
 			aboutWiFi.SettingWiFiEnable(false);
 			ProcessType = 1;
 			myHandler.post(Finished);
@@ -79,11 +79,11 @@ public class Main extends Activity {
 		public void run() {
 			try {
 				for (int i = 0; i < waitTime; i++) {
-					sleep(1000);
 					if (aboutWiFi.isWifiEnabled(Main.this)) {
 						ProcessType = 2;
 						break;
 					}
+					sleep(1000);
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -106,11 +106,11 @@ public class Main extends Activity {
 		public void run() {
 			try {
                                 while(true){
-					sleep(1000);
 					if (aboutWiFi.isWifiEnabled(Main.this)) {
 						ProcessType = 2;
 						break;
 					}
+					sleep(1000);
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -169,6 +169,7 @@ public class Main extends Activity {
 	public void RunAndToast(boolean run) {
 		Toast.makeText(this, ConnectType[ProcessType], Toast.LENGTH_LONG)
 				.show();
+                setResult(RESULT_OK, (new Intent()).putExtra("net_OK", run));
 	}
        
         public void onDestroy() {

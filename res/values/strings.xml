@@ -16,11 +16,11 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="app_name">NetConnect</string>
-    <string name="waitTitle">Please wait a moment!</string>
-    <string name="waitContent">System is trying to connet to network by WiFi!</string>
-    <string name="wifi_title">WiFi Settings</string>
-    <string name="wifi_message">Would you want to set the wifi?</string>
+    <string name="app_name">Net Wizard</string>
+    <string name="waitTitle">Please wait!</string>
+    <string name="waitContent">System is using WiFi connection</string>
+    <string name="wifi_title">WiFi settings</string>
+    <string name="wifi_message">Do you want to enter the WiFi settings?</string>
 
 
 

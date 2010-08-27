@@ -16,7 +16,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="app_name">快速連線</string>
+    <string name="app_name">快速連線精靈</string>
     <string name="waitTitle">請稍待!</string>
     <string name="waitContent">系統正在使用Wifi連線!</string>
     <string name="wifi_title">Wifi設定</string>
